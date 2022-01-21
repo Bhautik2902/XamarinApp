@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:controls="clr-namespace:Application2.Views"
+             x:Class="Application2.Views.About"
+             BackgroundColor="Azure">
+    <Shell.SearchHandler>
+        <controls:StudentSearchHandler Placeholder="Search Name" ShowsResults="True">
+            <controls:StudentSearchHandler.ItemTemplate>
+                <DataTemplate>
+                    <Label Text="{Binding name}" HeightRequest="30" VerticalTextAlignment="Center" FontSize="18"/>
+                </DataTemplate>
+            </controls:StudentSearchHandler.ItemTemplate>
+        </controls:StudentSearchHandler>
+    </Shell.SearchHandler>
+    
+    <ContentPage.Content>
+        <AbsoluteLayout Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+                
+                <RefreshView x:Name="myrefreshView" Refreshing="RefreshView_Refreshing">
+                    <CollectionView x:Name="ShowStudents" ItemsSource="{Binding StudentList}"
+                                SelectionMode="Single"
+                                SelectionChanged="ShowStudents_SelectionChanged" BackgroundColor="Azure">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <SwipeView>
+                                    <SwipeView.RightItems>
+                                        <SwipeItem Text="Edit" BackgroundColor="Green"
+                                                   Invoked="Edit_Invoked"></SwipeItem>
+                                        <SwipeItem Text="Delete" BackgroundColor="red" 
+                                                   Command="{Binding Path=BindingContext.DeleteCommand, Source={Reference ShowStudents}}" 
+                                                   CommandParameter="{Binding id}"></SwipeItem>
+                                    </SwipeView.RightItems>
+                                    <Frame  Padding="2,2,2,2" BackgroundColor="Azure">
+                                        <Grid RowDefinitions="*,*" ColumnDefinitions="*,3*,35,35" HeightRequest="70" Padding="3">
+                                            <Frame Padding="1,2,2,1" CornerRadius="50" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" BackgroundColor="#123456">
+                                                <Label Text="{Binding id}" FontSize="30" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+                                            </Frame>
+                                            <Label Text="{Binding name}" Grid.Row="0" Grid.Column="1" VerticalTextAlignment="Center" FontSize="22" 
+                                           TextColor="Black" FontAttributes="Bold" Margin="5,3,0,0"></Label>
+                                            <Label Text="{Binding phone}" Grid.Row="1" Grid.Column="1" VerticalTextAlignment="Center" Margin="5,0,0,0"
+                                           FontSize="16"></Label>
+                                        </Grid>
+                                    </Frame>
+                                </SwipeView>
+
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </RefreshView>
+
+                <ContentView x:Name="EditPopUp" BackgroundColor="Transparent" Padding="10, 0" IsVisible="false" >
+                    <Frame Padding="5,5,5,0">
+                        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                            <Label Text="Edit Details" FontSize="20" FontAttributes="Bold"></Label>
+                            <Entry x:Name="Name" Placeholder="Full name" Text="{Binding StudentObj.name}"/>
+                            <Entry x:Name="Email" Placeholder="Email" Keyboard="Email" Text="{Binding StudentObj.email}"/>
+                            <Entry x:Name="Phone" Placeholder="Phone" Keyboard="Numeric" Text="{Binding StudentObj.phone}"/>
+                            <Entry x:Name="Std" Placeholder="Standard" Keyboard="Numeric" Text="{Binding StudentObj.std}"/>
+
+                            <FlexLayout Direction="Row" JustifyContent="SpaceEvenly" Margin="0,0,20,0">
+                                <RadioButton x:Name="male" Content="Male" Value="Male" CheckedChanged="RadioButton_CheckedChanged"/>
+                                <RadioButton x:Name="female" Content="Female" Value="Female" CheckedChanged="RadioButton_CheckedChanged"/>
+                                <RadioButton x:Name="others" Content="Others" Value="Others" CheckedChanged="RadioButton_CheckedChanged"/>
+                            </FlexLayout>
+
+                            <FlexLayout Direction="Row" JustifyContent="SpaceAround" Padding="0,10,20,10">
+                                <Button x:Name="save" Text="Save" HorizontalOptions="Center" Clicked="save_Clicked" HeightRequest="40" />
+                                <Button x:Name="cancel" Text="Cancel" HorizontalOptions="Center" Clicked="cancel_Clicked" HeightRequest="40"/>
+                            </FlexLayout>
+                        </StackLayout>
+                    </Frame>
+                </ContentView>
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

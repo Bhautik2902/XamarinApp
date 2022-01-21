@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Application2.Views.RadioBinding">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid RowDefinitions="*" ColumnDefinitions="3*,*,*,*,*">
+                <Label Text="Travel" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Reading" Grid.Row="0" Grid.Column="2"/>
+                <Label Text="Sports" Grid.Row="0" Grid.Column="3"/>
+                <Label Text="Dance" Grid.Row="0" Grid.Column="4"/>
+            </Grid>
+            <ListView x:Name ="personlist" ItemsSource="{Binding PersonList}" SelectionMode="Single">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid RowDefinitions="*" ColumnDefinitions="3*,*,*,*,*" BackgroundColor="{Binding RowColor}">
+                                <Label Text="{Binding Name}" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Center" FontSize="20" TextColor="Black"/>
+                                <RadioButton Value="Travel" IsChecked="{Binding Travel, Mode=TwoWay}" Grid.Row="0" Grid.Column="1" CheckedChanged="RadioButton_CheckedChanged"/>
+                                <RadioButton Value="Reading" IsChecked="{Binding Reading, Mode=TwoWay}" Grid.Row="0" Grid.Column="2" CheckedChanged="RadioButton_CheckedChanged"/>
+                                <RadioButton Value="Sports" IsChecked="{Binding Sports, Mode=TwoWay}" Grid.Row="0" Grid.Column="3" CheckedChanged="RadioButton_CheckedChanged"/>
+                                <RadioButton Value="Dance" IsChecked="{Binding Dance, Mode=TwoWay}" Grid.Row="0" Grid.Column="4" CheckedChanged="RadioButton_CheckedChanged"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>

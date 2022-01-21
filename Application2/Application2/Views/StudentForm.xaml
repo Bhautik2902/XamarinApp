@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Application2.Views.StudentForm">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="Name" Placeholder="Full Name" Text="{Binding Name_student}"/>
+            <Entry x:Name="Email" Placeholder="Email" Keyboard="Email"/>
+            <Entry x:Name="Phone" Placeholder="Phone" Keyboard="Numeric" />
+            <Entry x:Name="Std" Placeholder="Standard" Keyboard="Numeric" />
+            <FlexLayout 
+                Direction="Row" 
+                JustifyContent="SpaceEvenly">
+                <RadioButton
+                        Content="Male"
+                        Value="Male"
+                        CheckedChanged="RadioButton_CheckedChanged"/>
+                <RadioButton
+                        Content="Female"
+                        Value="Female"
+                        CheckedChanged="RadioButton_CheckedChanged"/>
+                <RadioButton
+                        Content="Others"
+                        Value="Others"
+                        CheckedChanged="RadioButton_CheckedChanged"/>
+            </FlexLayout>
+
+            <Button x:Name="submit" Text="Submit" HorizontalOptions="Center" Clicked="submit_Clicked" />
+
+            <Button x:Name="SeeList" Text="SeeList" Clicked="SeeList_Clicked" HorizontalOptions="Center"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
