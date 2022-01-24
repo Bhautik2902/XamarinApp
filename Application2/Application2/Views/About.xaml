@@ -52,7 +52,7 @@
                 <ContentView x:Name="EditPopUp" BackgroundColor="Transparent" Padding="10, 0" IsVisible="false" >
                     <Frame Padding="5,5,5,0">
                         <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-                            <Label Text="Edit Details" FontSize="20" FontAttributes="Bold"></Label>
+                            <Label Text="Edit Details" FontSize="20" FontAttributes="Bold" FontFamily="Brands_reg400"></Label>
                             <Entry x:Name="Name" Placeholder="Full name" Text="{Binding StudentObj.name}"/>
                             <Entry x:Name="Email" Placeholder="Email" Keyboard="Email" Text="{Binding StudentObj.email}"/>
                             <Entry x:Name="Phone" Placeholder="Phone" Keyboard="Numeric" Text="{Binding StudentObj.phone}"/>

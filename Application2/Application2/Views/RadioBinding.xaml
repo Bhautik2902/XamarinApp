@@ -1,30 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:Local="clr-namespace:Application2.Views"
              x:Class="Application2.Views.RadioBinding">
     <ContentPage.Content>
         <StackLayout>
-            <Grid RowDefinitions="*" ColumnDefinitions="3*,*,*,*,*">
+            <Grid RowDefinitions="*" ColumnDefinitions="3*,*,*,*,*" HeightRequest="60">
                 <Label Text="Travel" Grid.Row="0" Grid.Column="1"/>
                 <Label Text="Reading" Grid.Row="0" Grid.Column="2"/>
                 <Label Text="Sports" Grid.Row="0" Grid.Column="3"/>
                 <Label Text="Dance" Grid.Row="0" Grid.Column="4"/>
             </Grid>
             <ListView x:Name ="personlist" ItemsSource="{Binding PersonList}" SelectionMode="Single">
-                <ListView.ItemTemplate>
+                <ListView.ItemTemplate EvenColor="White" UnevenColor="#eeeeee">
                     <DataTemplate>
-                        <ViewCell>
-                            <Grid RowDefinitions="*" ColumnDefinitions="3*,*,*,*,*" BackgroundColor="{Binding RowColor}">
+                        <Local:MyViewCell >
+                            <!--BackgroundColor="{Binding RowColor}"-->
+                            <Grid RowDefinitions="*" ColumnDefinitions="3*,*,*,*,*">
                                 <Label Text="{Binding Name}" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Center" FontSize="20" TextColor="Black"/>
                                 <RadioButton Value="Travel" IsChecked="{Binding Travel, Mode=TwoWay}" Grid.Row="0" Grid.Column="1" CheckedChanged="RadioButton_CheckedChanged"/>
                                 <RadioButton Value="Reading" IsChecked="{Binding Reading, Mode=TwoWay}" Grid.Row="0" Grid.Column="2" CheckedChanged="RadioButton_CheckedChanged"/>
                                 <RadioButton Value="Sports" IsChecked="{Binding Sports, Mode=TwoWay}" Grid.Row="0" Grid.Column="3" CheckedChanged="RadioButton_CheckedChanged"/>
                                 <RadioButton Value="Dance" IsChecked="{Binding Dance, Mode=TwoWay}" Grid.Row="0" Grid.Column="4" CheckedChanged="RadioButton_CheckedChanged"/>
                             </Grid>
-                        </ViewCell>
+                        </Local:MyViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <ListView>
+               
+            </ListView>
+           
         </StackLayout>
     </ContentPage.Content>
     

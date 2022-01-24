@@ -14,7 +14,7 @@ namespace Application2.Models
         public bool Dance { get; set; }
         public int Index { get; set; }
 
-        public Color RowColor
+        /*public Color RowColor
         {
             get
             {
@@ -23,7 +23,7 @@ namespace Application2.Models
                 else
                     return Color.Azure;
             }
-        } 
+        } */
 
     }
 }

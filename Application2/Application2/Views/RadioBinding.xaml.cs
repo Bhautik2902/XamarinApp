@@ -28,7 +28,6 @@ namespace Application2.Views
             };
 
             BindingContext = this;
-            
         }
 
         private void RadioButton_CheckedChanged(object sender, CheckedChangedEventArgs e)

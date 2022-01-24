@@ -6,6 +6,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Fonts\FA_Brands_Regular_400.otf" />
+    <None Remove="Resources\Fonts\FA_Free_Regular_400.otf" />
+    <None Remove="Resources\Fonts\FA_Free_Solid_900.otf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Fonts\FA_Brands_Regular_400.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FA_Free_Regular_400.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FA_Free_Solid_900.otf" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="sqlite-net" Version="1.6.292" />
     <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
