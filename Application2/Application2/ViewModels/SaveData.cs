@@ -63,7 +63,8 @@ namespace Application2.Services
         {
             StudentList.Clear();
             var sl = await GetAllStudents();
-            
+
+            new StudentSearchHandler();   // update studentlist of searchhandler class every time changes made.
             foreach (var student in sl)
             {
                 StudentList.Add(student);

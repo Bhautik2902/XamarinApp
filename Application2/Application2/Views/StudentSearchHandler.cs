@@ -13,7 +13,7 @@ namespace Application2.Views
 {
     public class StudentSearchHandler : SearchHandler
     {
-        public IEnumerable<Student> students { get; set; }
+        public static IEnumerable<Student> students { get; set; }
         public Type SelectedItemNavigationTarget { get; set; }
 
         public StudentSearchHandler()
@@ -56,8 +56,6 @@ namespace Application2.Views
             Application.Current.Properties["stu_details"] = item_detail;
 
             await Shell.Current.GoToAsync($"{nameof(StudentDetails)}");
-        }
-
-        
+        } 
     }
 }

@@ -36,6 +36,7 @@ namespace Application2.Services
 
         public static async Task<string> EditRecord(Student student, int id)
         {
+            await Init();
             student.id = id;
             int rows_affected = await db.UpdateAsync(student);
             if (rows_affected > 0)

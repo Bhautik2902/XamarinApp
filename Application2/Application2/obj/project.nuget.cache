@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zwkkNhrg/elIgsYT9shM/PtQXLtQ4HVHCf9spcdACWdZHsuethJLSbo8T737KA6GPfKVFNeglCyO/eZhyKWMGg==",
+  "dgSpecHash": "awDGopMloasO+IVWmqlqMPL0O1Cl+Qdz4qpleKIbI25TC/NkJ6/cCikqwoGbwugeSfJ/45vENiG0+chKdLPbXA==",
   "success": true,
   "projectFilePath": "C:\\Users\\bhaut\\source\\repos\\Application2\\Application2\\Application2\\Application2.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\bhaut\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.4\\sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",
     "C:\\Users\\bhaut\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.4\\sqlitepclraw.provider.e_sqlite3.2.0.4.nupkg.sha512",
     "C:\\Users\\bhaut\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\bhaut\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\bhaut\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\bhaut\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\bhaut\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",

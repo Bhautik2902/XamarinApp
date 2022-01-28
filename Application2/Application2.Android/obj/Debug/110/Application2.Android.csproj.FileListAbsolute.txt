@@ -586,3 +586,6 @@ C:\Users\bhaut\source\repos\Application2\Application2\Application2.Android\obj\D
 C:\Users\bhaut\source\repos\Application2\Application2\Application2.Android\obj\Debug\110\android\assets\System.Memory.dll
 C:\Users\bhaut\source\repos\Application2\Application2\Application2.Android\obj\Debug\110\android\assets\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\bhaut\source\repos\Application2\Application2\Application2.Android\obj\Debug\110\android\assets\Newtonsoft.Json.dll
+C:\Users\bhaut\source\repos\Application2\Application2\Application2.Android\obj\Debug\110\android\assets\System.ComponentModel.Annotations.dll
+C:\Users\bhaut\source\repos\Application2\Application2\Application2.Android\obj\Debug\110\android\assets\System.ComponentModel.DataAnnotations.dll
+C:\Users\bhaut\source\repos\Application2\Application2\Application2.Android\obj\Debug\110\android\assets\System.ComponentModel.DataAnnotations.pdb

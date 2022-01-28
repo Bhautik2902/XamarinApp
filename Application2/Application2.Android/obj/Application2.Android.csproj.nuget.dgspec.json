@@ -104,6 +104,10 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.6.1, )"

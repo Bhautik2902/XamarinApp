@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Application2.Views.APIRecords">
+    <ContentPage.Content>
+        <AbsoluteLayout Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+
+                <RefreshView x:Name="myrefreshView" Refreshing="myrefreshView_Refreshing">
+                    <CollectionView x:Name="ShowRecords" ItemsSource="{Binding APIRecords}"
+                                SelectionMode="Single"
+                                SelectionChanged="ShowRecords_SelectionChanged"  BackgroundColor="Azure">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <SwipeView>
+                                    <SwipeView.RightItems>
+                                        <SwipeItem Text="Edit" BackgroundColor="Green"
+                                                   Invoked="SwipeItem_Invoked"></SwipeItem>
+                                        <SwipeItem Text="Delete" BackgroundColor="red" 
+                                                   Command="{Binding Path=BindingContext.DeleteCommand, Source={Reference ShowRecords}}" 
+                                                   CommandParameter="{Binding id}"></SwipeItem>
+                                    </SwipeView.RightItems>
+                                    <Frame  Padding="2,2,2,2" BackgroundColor="Azure">
+                                        <Grid RowDefinitions="*,*" ColumnDefinitions="*,3*,35,35" HeightRequest="70" Padding="3">
+                                            <Frame Padding="1,2,2,1" CornerRadius="50" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" BackgroundColor="#123456">
+                                                <Label Text="{Binding id}" FontSize="30" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+                                            </Frame>
+                                            <Label Text="{Binding firstname}" Grid.Row="0" Grid.Column="1" VerticalTextAlignment="Center" FontSize="22" 
+                                           TextColor="Black" FontAttributes="Bold" Margin="5,3,0,0"></Label>
+                                            <Label Text="{Binding phone}" Grid.Row="1" Grid.Column="1" VerticalTextAlignment="Center" Margin="5,0,0,0"
+                                           FontSize="16"></Label>
+                                        </Grid>
+                                    </Frame>
+                                </SwipeView>
+
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </RefreshView>
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -17,3 +17,4 @@ C:\Users\bhaut\source\repos\Application2\Application2\Application2\obj\Debug\net
 C:\Users\bhaut\source\repos\Application2\Application2\Application2\obj\Debug\netstandard2.0\Views\StudentDetails.xaml.g.cs
 C:\Users\bhaut\source\repos\Application2\Application2\Application2\obj\Debug\netstandard2.0\Views\RadioBinding.xaml.g.cs
 C:\Users\bhaut\source\repos\Application2\Application2\Application2\obj\Debug\netstandard2.0\Application2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bhaut\source\repos\Application2\Application2\Application2\obj\Debug\netstandard2.0\Views\APIRecords.xaml.g.cs

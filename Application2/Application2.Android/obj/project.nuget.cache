@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "85O8uyWsKoNU7QmrMUMAAKjIVwk4ZJZrD3NfQHpcn/rSb3yLH1Ykvv//fxByVZPKedSctaThSltwjfTGqGT6Xw==",
+  "dgSpecHash": "UHyykJCbRuzaRKDgMELyAyeIIKrHjclnAddX6V5j8W8hMGGWMy6s7GmoTgytmrx4hMakhF4JoHbKKcuhUI5BXg==",
   "success": true,
   "projectFilePath": "C:\\Users\\bhaut\\source\\repos\\Application2\\Application2\\Application2.Android\\Application2.Android.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\bhaut\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3.android\\2.0.4\\sqlitepclraw.lib.e_sqlite3.android.2.0.4.nupkg.sha512",
     "C:\\Users\\bhaut\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.4\\sqlitepclraw.provider.e_sqlite3.2.0.4.nupkg.sha512",
     "C:\\Users\\bhaut\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\bhaut\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\bhaut\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\bhaut\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\bhaut\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
