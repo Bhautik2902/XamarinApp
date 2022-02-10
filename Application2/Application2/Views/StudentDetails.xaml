@@ -29,6 +29,8 @@
                     <Label x:Name="fgender" Text="gender" Grid.Row="3" Grid.Column="1" FontSize="18" VerticalTextAlignment="Center"></Label>
                 </Grid>
             </Frame>
+
+            <Button Text="Print" Clicked="Button_Clicked"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

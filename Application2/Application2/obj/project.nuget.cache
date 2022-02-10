@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "awDGopMloasO+IVWmqlqMPL0O1Cl+Qdz4qpleKIbI25TC/NkJ6/cCikqwoGbwugeSfJ/45vENiG0+chKdLPbXA==",
+  "dgSpecHash": "Yj28aHOAygXbocIlB6orV8MkOH9ZGfVYQdK3XbHIMhPLnoQgrgX/jV61RfNBxMLoWip26JPszjpvQFi1QaUdvw==",
   "success": true,
   "projectFilePath": "C:\\Users\\bhaut\\source\\repos\\Application2\\Application2\\Application2\\Application2.csproj",
   "expectedPackageFiles": [
@@ -17,7 +17,11 @@
     "C:\\Users\\bhaut\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\bhaut\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\bhaut\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\bhaut\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\bhaut\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.7.0\\system.reflection.emit.ilgeneration.4.7.0.nupkg.sha512",
+    "C:\\Users\\bhaut\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512",
+    "C:\\Users\\bhaut\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.3\\system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+    "C:\\Users\\bhaut\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\bhaut\\.nuget\\packages\\xamarin.communitytoolkit\\1.1.0\\xamarin.communitytoolkit.1.1.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],
